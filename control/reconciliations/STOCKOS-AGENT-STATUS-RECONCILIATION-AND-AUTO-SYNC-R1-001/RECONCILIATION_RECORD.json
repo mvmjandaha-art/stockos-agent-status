@@ -1,0 +1,43 @@
+{
+  "document_class": "NON_NORMATIVE_APPEND_ONLY_RECONCILIATION_RECORD",
+  "task_id": "STOCKOS-AGENT-STATUS-RECONCILIATION-AND-AUTO-SYNC-R1-001",
+  "timestamp_ist": "2026-07-31T11:24:24+0530_IST",
+  "issue": "https://github.com/mvmjandaha-art/stockos-agent-status/issues/1",
+  "board_read": {
+    "issue_body_complete": true,
+    "all_comments_complete": true,
+    "newer_owner_stop_hold_invalid_superseded_or_scope_correction": false
+  },
+  "codex_reconciliation": {
+    "visual_task_final_comment_id": 5139390357,
+    "handoff_task_final_comment_id": 5139436956,
+    "required_codex_status_missing": false,
+    "duplicate_codex_status_posted": false
+  },
+  "claude_reconciliation": {
+    "prior_blocker_comment_id": 5139412022,
+    "prior_comment_predates_codex_handoff_completion": true,
+    "prior_session_reused": true,
+    "prior_claim_acquired": false,
+    "prior_report_created": false,
+    "prior_f001_and_f003_stale_after_codex_completion": true,
+    "review_claim_path_exists": false,
+    "review_root_path_exists": false,
+    "review_evidence_path_exists": false,
+    "independent_review_report_exists": false,
+    "state": "NOT_LAUNCHED",
+    "valid_technical_review_verdict": "NOT_YET_ISSUED"
+  },
+  "queue_selection": {
+    "rule": "D_CLAUDE_REVIEW_NOT_LAUNCHED",
+    "state": "READY_FOR_CLAUDE",
+    "next_action": "OWNER_LAUNCHES_GENUINELY_FRESH_CLAUDE_WITH_EXACT_R2_003_REVIEW_LAUNCH_AND_ATOMIC_CLAIM"
+  },
+  "authority": {
+    "blueprint_ratified": false,
+    "implementation_authorized": false,
+    "shadow_authorized": false,
+    "paper_authorized": false,
+    "live_authorized": false
+  }
+}
