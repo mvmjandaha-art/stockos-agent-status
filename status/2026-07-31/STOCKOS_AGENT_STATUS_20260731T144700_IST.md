@@ -1,0 +1,42 @@
+# StockOS Agent Status
+
+RECORDED_AT_IST=2026-07-31T14:47:00+05:30
+DOCUMENT_CLASS=PUBLIC_SANITIZED_NON_NORMATIVE_STATUS
+
+## Lane ownership
+
+- Grok coordinates the Claude lane.
+- ChatGPT coordinates the Codex lane and GitHub status updates.
+- Codex and Claude may work in parallel on non-overlapping tasks.
+- Routine local permission loops are closed.
+
+## Claude candidate
+
+TASK_ID=STOCKOS-CLAUDE-PARALLEL-BLUEPRINT-TRACEABILITY-R1-001
+BASE_COMMIT=1538cbf0f5bda764f0555f1963745141529d57ef
+CANDIDATE_COMMIT=00e8876
+COMMIT_COUNT=4
+REPORTED_FULL_SUITE=7447_passed_3_skipped_1_xfailed_0_failed
+MERGED=NO
+PUSHED_TO_PRODUCT_REPOSITORY=NO
+
+## Review status
+
+REVIEW_ACCEPTED_BY_AUTHORING_SESSION=NO
+VERDICT_ISSUED=NONE
+REASON=INDEPENDENT_REVIEW_REQUIRES_A_GENUINELY_FRESH_SESSION
+NEXT_ACTION=DISPATCH_THE_FROZEN_GIT_BOUND_CANDIDATE_TO_A_FRESH_CLAUDE_REVIEWER
+
+## Codex status
+
+CODEX_LANE_OWNER=CHATGPT
+CODEX_STATE=READY_FOR_NEXT_NON_OVERLAPPING_PRODUCT_TASK
+
+## Safety
+
+AWS_ACTION_AUTHORIZED=NO
+BROKER_ACTION_AUTHORIZED=NO
+PAPER_AUTHORIZED=NO
+LIVE_AUTHORIZED=NO
+
+This status board is coordination evidence only and grants no product, review, merge, deployment, PAPER, or LIVE authority.
