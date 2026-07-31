@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "StockOS Sanitized Controller Blocker",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "status",
+    "blocker_id",
+    "blocker_class",
+    "summary",
+    "exact_scope",
+    "candidate_identity",
+    "preserved_artifacts",
+    "required_authority",
+    "next_action",
+    "stop_here"
+  ],
+  "properties": {
+    "task_id": {"type": "string", "minLength": 1},
+    "status": {"const": "BLOCKED"},
+    "blocker_id": {"type": "string", "minLength": 1},
+    "blocker_class": {
+      "enum": [
+        "STOP_OR_HOLD",
+        "IDENTITY_MISMATCH",
+        "REMOTE_PATH_COLLISION",
+        "COMPETING_CLAIM",
+        "DEPENDENCY_NOT_PASS",
+        "SCOPE_AMBIGUITY",
+        "MISSING_EVIDENCE",
+        "INVALID_REVIEW",
+        "UNAUTHORIZED_ACTION_REQUIRED",
+        "SECRET_OR_PRIVATE_DATA",
+        "OTHER_FAIL_CLOSED"
+      ]
+    },
+    "summary": {"type": "string", "minLength": 1},
+    "exact_scope": {"type": "string", "minLength": 1},
+    "candidate_identity": {"type": "string", "minLength": 1},
+    "preserved_artifacts": {"type": "array", "items": {"type": "string"}},
+    "required_authority": {"type": "string", "minLength": 1},
+    "next_action": {"type": "string", "minLength": 1},
+    "stop_here": {"const": true},
+    "secret_values_included": {"const": false}
+  }
+}
