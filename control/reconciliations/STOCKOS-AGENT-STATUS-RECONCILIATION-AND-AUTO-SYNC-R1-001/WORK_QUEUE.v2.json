@@ -1,0 +1,68 @@
+{
+  "document_class": "NON_NORMATIVE_VERSIONED_COORDINATION_CONTROL_SUCCESSOR",
+  "reconciliation_task_id": "STOCKOS-AGENT-STATUS-RECONCILIATION-AND-AUTO-SYNC-R1-001",
+  "generated_at_ist": "2026-07-31T11:24:24+0530_IST",
+  "predecessor": {
+    "path": "control/WORK_QUEUE.json",
+    "github_blob_sha": "033ed3959d7004a3edbd2fd852e7b54508af7124",
+    "modified": false
+  },
+  "architecture_authority": {
+    "name": "STOCKOS_THREE_LAYER_FINAL_BLUEPRINT_R2_003.md",
+    "sha256": "e407d7a5a3753b1455372635cfd982efbd5a590f7c868a1e961daafb38431376",
+    "size": 39665
+  },
+  "board_is_coordination_evidence_only": true,
+  "claude_review_state": "NOT_LAUNCHED",
+  "queue_state_after_reconciliation": "READY_FOR_CLAUDE",
+  "tasks": [
+    {
+      "task_id": "STOCKOS-R2-003-VISUAL-BLUEPRINT-PUBLICATION-001",
+      "agent_eligibility": ["CODEX"],
+      "state": "CLOSED",
+      "verdict": "PASS",
+      "active_claim": null
+    },
+    {
+      "task_id": "STOCKOS-THREE-LAYER-R2-003-D001-SCOPE-HANDOFF-VERIFICATION-ARTIFACT-001",
+      "agent_eligibility": ["CODEX"],
+      "state": "READY_FOR_CLAUDE",
+      "verdict": "PASS_READY_FOR_OWNER_LAUNCHED_FRESH_CLAUDE_REVIEW",
+      "active_claim": null,
+      "artifact": {
+        "path": "/private/tmp/stockos-three-layer-r2-003-d001-handoff-verification-001/outputs/STOCKOS_THREE_LAYER_R2_003_D001_SCOPE_HANDOFF_VERIFICATION_001.md",
+        "sha256": "d330410df18d1b3217ba6e168b86c6b3b7b665a9d889bb8526e4d648b8cc6652",
+        "size": 15173,
+        "mode": "0444"
+      }
+    },
+    {
+      "task_id": "STOCKOS-THREE-LAYER-FINAL-BLUEPRINT-R2-003-SCOPE-FRESH-REVIEW-001",
+      "agent_eligibility": ["CLAUDE"],
+      "state": "READY_FOR_CLAUDE",
+      "owner_launch_required": true,
+      "owner_launch_observed": false,
+      "fresh_session_required": true,
+      "prior_reused_session_attempt_admissible": false,
+      "claim_acquired": false,
+      "review_report_created": false,
+      "next_action": "OWNER_LAUNCHES_GENUINELY_FRESH_CLAUDE_WITH_EXACT_R2_003_REVIEW_LAUNCH_AND_ATOMIC_CLAIM"
+    }
+  ],
+  "automatic_continuation": {
+    "agent_launch_by_status_bridge": false,
+    "task_invention": false,
+    "blueprint_ratification": false,
+    "implementation": false,
+    "remediation": false,
+    "merge": false,
+    "push": false,
+    "deployment": false,
+    "aws": false,
+    "broker": false,
+    "service": false,
+    "shadow": false,
+    "paper": false,
+    "live": false
+  }
+}
