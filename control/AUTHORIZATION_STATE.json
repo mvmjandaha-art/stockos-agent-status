@@ -1,0 +1,26 @@
+{
+  "document_class": "NON_NORMATIVE_COORDINATION_CONTROL",
+  "observed_at_ist": "2026-07-31T10:13:46+0530",
+  "source": "https://github.com/mvmjandaha-art/stockos-agent-status/issues/1",
+  "architecture_authority": "STOCKOS_THREE_LAYER_FINAL_BLUEPRINT_R2_003.md",
+  "blueprint_ratified": false,
+  "implementation_authorized": false,
+  "shadow_authorized": false,
+  "paper_authorized": false,
+  "live_authorized": false,
+  "aws_action_authorized": false,
+  "broker_action_authorized": false,
+  "service_action_authorized": false,
+  "deployment_authorized": false,
+  "controller_authorized_actions": [
+    "READ_STATUS_BOARD",
+    "CREATE_ABSENT_SANITIZED_CONTROL_FILES",
+    "CLAIM_EXACT_ELIGIBLE_CODEX_TASK",
+    "EXECUTE_CURRENT_PACKET_TASK_1",
+    "EXECUTE_DEPENDENT_CURRENT_PACKET_TASK_2_AFTER_TASK_1_PASS",
+    "SEAL_LOCAL_EVIDENCE",
+    "PUBLISH_SANITIZED_PROGRESS",
+    "ENTER_READ_ONLY_WATCH"
+  ],
+  "authority_expansion_by_pass": false
+}
