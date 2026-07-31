@@ -1,0 +1,17 @@
+{
+  "document_class": "NON_NORMATIVE_COORDINATION_CONTROL",
+  "observed_at_ist": "2026-07-31T10:13:46+0530",
+  "candidate_name": "STOCKOS_THREE_LAYER_FINAL_BLUEPRINT_R2_003.md",
+  "candidate_sequence": "R2-003",
+  "local_path": "/private/tmp/stockos-three-layer-production-readiness-r2-003/outputs/STOCKOS_THREE_LAYER_FINAL_BLUEPRINT_R2_003.md",
+  "public_url": "https://github.com/mvmjandaha-art/stockos-agent-status/blob/main/blueprints/r2-003/STOCKOS_THREE_LAYER_FINAL_BLUEPRINT_R2_003.md",
+  "sha256": "e407d7a5a3753b1455372635cfd982efbd5a590f7c868a1e961daafb38431376",
+  "size": 39665,
+  "local_mode": "0444",
+  "correction_scope": "D-001_AND_PERMITTED_PACKAGE_PROVENANCE_ONLY",
+  "review_launch_path": "/private/tmp/stockos-three-layer-production-readiness-r2-003/outputs/STOCKOS_THREE_LAYER_FINAL_BLUEPRINT_R2_003_REVIEW_LAUNCH.md",
+  "review_launch_sha256": "a89f6f1e59a7ef439513310b01c9e72668b6293f96f65fd83b5a03ebc6cf3f72",
+  "review_launch_size": 6315,
+  "review_verdict": "NOT_YET_ISSUED",
+  "production_ready": false
+}
