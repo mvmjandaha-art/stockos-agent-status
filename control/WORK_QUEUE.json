@@ -1,0 +1,51 @@
+{
+  "document_class": "NON_NORMATIVE_COORDINATION_CONTROL",
+  "controller_task_id": "STOCKOS-AUTONOMOUS-CODEX-LANE-CONTROLLER-R1-001",
+  "generated_at_ist": "2026-07-31T10:13:46+0530",
+  "architecture_authority": {
+    "name": "STOCKOS_THREE_LAYER_FINAL_BLUEPRINT_R2_003.md",
+    "sha256": "e407d7a5a3753b1455372635cfd982efbd5a590f7c868a1e961daafb38431376",
+    "size": 39665
+  },
+  "board_is_coordination_evidence_only": true,
+  "queue_states": [
+    "OWNER_APPROVED",
+    "READY_FOR_CODEX",
+    "CODEX_CLAIMED",
+    "CODEX_RUNNING",
+    "READY_FOR_CLAUDE",
+    "CLAUDE_RUNNING",
+    "REMEDIATION_REQUIRED",
+    "READY_FOR_OWNER_ARCHITECT",
+    "BLOCKED",
+    "SUPERSEDED",
+    "CLOSED"
+  ],
+  "tasks": [
+    {
+      "task_id": "STOCKOS-R2-003-VISUAL-BLUEPRINT-PUBLICATION-001",
+      "agent_eligibility": ["CODEX"],
+      "owner_approved_by_current_controller_packet": true,
+      "state_at_bootstrap": "READY_FOR_CODEX",
+      "dependency": null,
+      "destination": "blueprints/r2-003/STOCKOS_R2_003_VISUAL_BLUEPRINT.md",
+      "successor": "STOCKOS-THREE-LAYER-R2-003-D001-SCOPE-HANDOFF-VERIFICATION-ARTIFACT-001"
+    },
+    {
+      "task_id": "STOCKOS-THREE-LAYER-R2-003-D001-SCOPE-HANDOFF-VERIFICATION-ARTIFACT-001",
+      "agent_eligibility": ["CODEX"],
+      "owner_approved_by_current_controller_packet": true,
+      "state_at_bootstrap": "READY_FOR_CODEX",
+      "dependency": "STOCKOS-R2-003-VISUAL-BLUEPRINT-PUBLICATION-001:PASS",
+      "destination": "/private/tmp/stockos-three-layer-r2-003-d001-handoff-verification-001/outputs/STOCKOS_THREE_LAYER_R2_003_D001_SCOPE_HANDOFF_VERIFICATION_001.md",
+      "successor": "OWNER_LAUNCHED_FRESH_CLAUDE_REVIEW"
+    }
+  ],
+  "automatic_continuation": {
+    "allowed_only_for_explicit_successor": true,
+    "requires_current_pass": true,
+    "requires_owner_approved_and_ready_for_codex": true,
+    "stops_for_fresh_review_or_owner_decision": true,
+    "operational_actions_authorized": false
+  }
+}
